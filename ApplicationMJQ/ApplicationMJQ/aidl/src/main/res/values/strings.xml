@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AIDL</string>
+    <string name="call_services">调用服务里面的方法</string>
+    <string name="star_service">混合方式开启服务</string>
+    <string name="regeist_broadcast_inservice">在服务里面注册广播接收者</string>
+    <string name="piture_zoom">加载大图</string>
+    <string name="piture_hauhua">Android 画画版</string>
+</resources>
