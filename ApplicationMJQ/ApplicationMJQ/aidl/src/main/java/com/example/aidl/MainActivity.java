@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 
 import com.mjq.drawboard.DrawingBoardActivity;
+import com.mjq.music.MusicActivity;
 import com.mjq.zoompitcure.ZoomingActivity;
 
 /**
@@ -50,6 +51,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv5:
             Intent intentdraw = new Intent(this, DrawingBoardActivity.class);
             startActivity(intentdraw);
+            break;
+            case R.id.tv6:
+            Intent intentMusic = new Intent(this, MusicActivity.class);
+            startActivity(intentMusic);
             break;
             default:
 
