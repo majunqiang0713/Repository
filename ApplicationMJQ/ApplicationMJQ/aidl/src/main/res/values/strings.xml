@@ -6,4 +6,5 @@
     <string name="piture_zoom">加载大图</string>
     <string name="piture_hauhua">Android 画画版</string>
     <string name="music">音乐播放器</string>
+    <string name="vitamio">vitamio实现视频播放器</string>
 </resources>

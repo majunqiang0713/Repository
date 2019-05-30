@@ -28,6 +28,7 @@ public class MusicService extends Service {
     }
 
     public void playMusic() {
+        //mMMMediaPlayer.reset();
         mMMMediaPlayer.start();
 
 

@@ -11,6 +11,7 @@ import android.view.View;
 
 import com.mjq.drawboard.DrawingBoardActivity;
 import com.mjq.music.MusicActivity;
+import com.mjq.vitamio.VitamioActivity;
 import com.mjq.zoompitcure.ZoomingActivity;
 
 /**
@@ -55,6 +56,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv6:
             Intent intentMusic = new Intent(this, MusicActivity.class);
             startActivity(intentMusic);
+            break;
+            case R.id.tv7:
+            Intent intentVitamio = new Intent(this, VitamioActivity.class);
+            startActivity(intentVitamio);
             break;
             default:
 
