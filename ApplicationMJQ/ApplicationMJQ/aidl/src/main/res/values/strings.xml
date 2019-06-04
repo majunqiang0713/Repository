@@ -7,4 +7,5 @@
     <string name="piture_hauhua">Android 画画版</string>
     <string name="music">音乐播放器</string>
     <string name="vitamio">vitamio实现视频播放器</string>
+    <string name="contentprodiver">内容提供者</string>
 </resources>

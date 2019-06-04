@@ -9,6 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.mjq.contentprovider.ContentProviderActivity;
 import com.mjq.drawboard.DrawingBoardActivity;
 import com.mjq.music.MusicActivity;
 import com.mjq.vitamio.VitamioActivity;
@@ -60,6 +61,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.tv7:
             Intent intentVitamio = new Intent(this, VitamioActivity.class);
             startActivity(intentVitamio);
+            break;
+            case R.id.tv8:
+            Intent intent7 = new Intent(this, ContentProviderActivity.class);
+            startActivity(intent7);
             break;
             default:
 

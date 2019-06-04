@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.aidl">
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -18,7 +19,14 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
-        <activity android:name="com.mjq.vitamio.VitamioActivity"></activity>
+        <activity android:name="com.mjq.contentprovider.ContentProviderActivity"></activity>
+        <activity
+            android:name="io.vov.vitamio.activity.InitActivity"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.mjq.vitamio.VitamioActivity" />
 
         <service
             android:name="com.mjq.music.MusicService"
@@ -28,12 +36,6 @@
         <activity android:name="com.mjq.music.MusicActivity" />
         <activity android:name="com.mjq.drawboard.DrawingBoardActivity" />
         <activity android:name="com.mjq.zoompitcure.ZoomingActivity" />
-        <activity
-            android:name="io.vov.vitamio.activity.InitActivity"
-            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
-            android:launchMode="singleTop"
-            android:theme="@android:style/Theme.NoTitleBar"
-            android:windowSoftInputMode="stateAlwaysHidden" />
 
         <receiver
             android:name=".SpecialBroadCastReceiver"
